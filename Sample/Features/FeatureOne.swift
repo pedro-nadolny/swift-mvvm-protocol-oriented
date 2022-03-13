@@ -1,16 +1,9 @@
 import Foundation
 
-protocol FeatureOne: HasServiceOne & HasServiceTwo {}
+protocol FeatureOne: HasServiceOne {}
 
 extension FeatureOne {
     func featureOne(completion: @escaping (Result<Void, Error>) -> Void) {
-        serviceOne.oneServiceCall { result in
-            guard case .success = result else {
-                completion(result)
-                return
-            }
-            
-            serviceTwo.twoServiceCall(completion: completion)
-        }
+        serviceOne.oneServiceCall(completion: completion)
     }
 }

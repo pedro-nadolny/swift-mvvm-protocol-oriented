@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB3C023027DC38AF00778782 /* ServiceTwoStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C022F27DC38AF00778782 /* ServiceTwoStub.swift */; };
 		EBB0F51F27C46AD60008DF92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F51E27C46AD60008DF92 /* AppDelegate.swift */; };
 		EBB0F52127C46AD60008DF92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F52027C46AD60008DF92 /* SceneDelegate.swift */; };
 		EBB0F52327C46AD60008DF92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F52227C46AD60008DF92 /* ViewController.swift */; };
@@ -19,15 +18,7 @@
 		EBB0F53B27C46D820008DF92 /* FeatureTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F53A27C46D820008DF92 /* FeatureTwo.swift */; };
 		EBB0F53E27C46E1D0008DF92 /* ServiceOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F53D27C46E1D0008DF92 /* ServiceOne.swift */; };
 		EBB0F54027C46E240008DF92 /* ServiceTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F53F27C46E240008DF92 /* ServiceTwo.swift */; };
-		EBB0F54327C473660008DF92 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F54227C473660008DF92 /* Analytics.swift */; };
-		EBB0F54527C473870008DF92 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F54427C473870008DF92 /* FeatureFlags.swift */; };
-		EBB0F54827C473A30008DF92 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F54727C473A30008DF92 /* DependencyContainer.swift */; };
 		EBB0F55027C4786F0008DF92 /* FeatureOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F54F27C4786F0008DF92 /* FeatureOneTests.swift */; };
-		EBB0F55C27C47AE40008DF92 /* DepenceyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F55B27C47AE40008DF92 /* DepenceyContainer.swift */; };
-		EBB0F55F27C47B2B0008DF92 /* AnalyticsDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F55E27C47B2B0008DF92 /* AnalyticsDummy.swift */; };
-		EBB0F56427C47B580008DF92 /* FeatuerFlagDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F56327C47B580008DF92 /* FeatuerFlagDummy.swift */; };
-		EBB0F56627C47B600008DF92 /* ServiceOneDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F56527C47B600008DF92 /* ServiceOneDummy.swift */; };
-		EBB0F56927C47B700008DF92 /* ServiceTwoDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F56827C47B700008DF92 /* ServiceTwoDummy.swift */; };
 		EBB0F56B27C47F6C0008DF92 /* ServiceOneStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB0F56A27C47F6C0008DF92 /* ServiceOneStub.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EB3C022F27DC38AF00778782 /* ServiceTwoStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTwoStub.swift; sourceTree = "<group>"; };
 		EBB0F51B27C46AD60008DF92 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB0F51E27C46AD60008DF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB0F52027C46AD60008DF92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,16 +46,8 @@
 		EBB0F53A27C46D820008DF92 /* FeatureTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTwo.swift; sourceTree = "<group>"; };
 		EBB0F53D27C46E1D0008DF92 /* ServiceOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceOne.swift; sourceTree = "<group>"; };
 		EBB0F53F27C46E240008DF92 /* ServiceTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTwo.swift; sourceTree = "<group>"; };
-		EBB0F54227C473660008DF92 /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
-		EBB0F54427C473870008DF92 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
-		EBB0F54727C473A30008DF92 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		EBB0F54D27C4786F0008DF92 /* SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB0F54F27C4786F0008DF92 /* FeatureOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureOneTests.swift; sourceTree = "<group>"; };
-		EBB0F55B27C47AE40008DF92 /* DepenceyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepenceyContainer.swift; sourceTree = "<group>"; };
-		EBB0F55E27C47B2B0008DF92 /* AnalyticsDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDummy.swift; sourceTree = "<group>"; };
-		EBB0F56327C47B580008DF92 /* FeatuerFlagDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatuerFlagDummy.swift; sourceTree = "<group>"; };
-		EBB0F56527C47B600008DF92 /* ServiceOneDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceOneDummy.swift; sourceTree = "<group>"; };
-		EBB0F56827C47B700008DF92 /* ServiceTwoDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTwoDummy.swift; sourceTree = "<group>"; };
 		EBB0F56A27C47F6C0008DF92 /* ServiceOneStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceOneStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,8 +90,6 @@
 		EBB0F51D27C46AD60008DF92 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				EBB0F55627C478CC0008DF92 /* Dependencies */,
-				EBB0F54127C473610008DF92 /* Core */,
 				EBB0F53C27C46E160008DF92 /* Services */,
 				EBB0F53727C46D720008DF92 /* Features */,
 				EBB0F53227C46ADE0008DF92 /* Scene */,
@@ -148,31 +128,13 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		EBB0F54127C473610008DF92 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				EBB0F54227C473660008DF92 /* Analytics.swift */,
-				EBB0F54427C473870008DF92 /* FeatureFlags.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		EBB0F54E27C4786F0008DF92 /* SampleTests */ = {
 			isa = PBXGroup;
 			children = (
 				EBB0F57427C5768F0008DF92 /* Features */,
-				EBB0F55A27C47AC70008DF92 /* DependencyContainer */,
 				EBB0F55D27C47B1E0008DF92 /* TestDoubles */,
 			);
 			path = SampleTests;
-			sourceTree = "<group>";
-		};
-		EBB0F55627C478CC0008DF92 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				EBB0F54727C473A30008DF92 /* DependencyContainer.swift */,
-			);
-			path = Dependencies;
 			sourceTree = "<group>";
 		};
 		EBB0F55927C47A080008DF92 /* FeatureOne */ = {
@@ -183,57 +145,20 @@
 			path = FeatureOne;
 			sourceTree = "<group>";
 		};
-		EBB0F55A27C47AC70008DF92 /* DependencyContainer */ = {
-			isa = PBXGroup;
-			children = (
-				EBB0F55B27C47AE40008DF92 /* DepenceyContainer.swift */,
-			);
-			path = DependencyContainer;
-			sourceTree = "<group>";
-		};
 		EBB0F55D27C47B1E0008DF92 /* TestDoubles */ = {
 			isa = PBXGroup;
 			children = (
-				EBB0F56727C47B640008DF92 /* ServiceTwo */,
 				EBB0F56227C47B460008DF92 /* ServiceOne */,
-				EBB0F56127C47B380008DF92 /* FeatureFlag */,
-				EBB0F56027C47B2E0008DF92 /* Analytics */,
 			);
 			path = TestDoubles;
-			sourceTree = "<group>";
-		};
-		EBB0F56027C47B2E0008DF92 /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				EBB0F55E27C47B2B0008DF92 /* AnalyticsDummy.swift */,
-			);
-			path = Analytics;
-			sourceTree = "<group>";
-		};
-		EBB0F56127C47B380008DF92 /* FeatureFlag */ = {
-			isa = PBXGroup;
-			children = (
-				EBB0F56327C47B580008DF92 /* FeatuerFlagDummy.swift */,
-			);
-			path = FeatureFlag;
 			sourceTree = "<group>";
 		};
 		EBB0F56227C47B460008DF92 /* ServiceOne */ = {
 			isa = PBXGroup;
 			children = (
-				EBB0F56527C47B600008DF92 /* ServiceOneDummy.swift */,
 				EBB0F56A27C47F6C0008DF92 /* ServiceOneStub.swift */,
 			);
 			path = ServiceOne;
-			sourceTree = "<group>";
-		};
-		EBB0F56727C47B640008DF92 /* ServiceTwo */ = {
-			isa = PBXGroup;
-			children = (
-				EBB0F56827C47B700008DF92 /* ServiceTwoDummy.swift */,
-				EB3C022F27DC38AF00778782 /* ServiceTwoStub.swift */,
-			);
-			path = ServiceTwo;
 			sourceTree = "<group>";
 		};
 		EBB0F56C27C573BC0008DF92 /* One */ = {
@@ -359,12 +284,9 @@
 				EBB0F52327C46AD60008DF92 /* ViewController.swift in Sources */,
 				EBB0F53B27C46D820008DF92 /* FeatureTwo.swift in Sources */,
 				EBB0F51F27C46AD60008DF92 /* AppDelegate.swift in Sources */,
-				EBB0F54327C473660008DF92 /* Analytics.swift in Sources */,
-				EBB0F54527C473870008DF92 /* FeatureFlags.swift in Sources */,
 				EBB0F54027C46E240008DF92 /* ServiceTwo.swift in Sources */,
 				EBB0F52127C46AD60008DF92 /* SceneDelegate.swift in Sources */,
 				EBB0F53E27C46E1D0008DF92 /* ServiceOne.swift in Sources */,
-				EBB0F54827C473A30008DF92 /* DependencyContainer.swift in Sources */,
 				EBB0F53927C46D7C0008DF92 /* FeatureOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,14 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB3C023027DC38AF00778782 /* ServiceTwoStub.swift in Sources */,
 				EBB0F56B27C47F6C0008DF92 /* ServiceOneStub.swift in Sources */,
-				EBB0F55F27C47B2B0008DF92 /* AnalyticsDummy.swift in Sources */,
-				EBB0F56927C47B700008DF92 /* ServiceTwoDummy.swift in Sources */,
-				EBB0F55C27C47AE40008DF92 /* DepenceyContainer.swift in Sources */,
 				EBB0F55027C4786F0008DF92 /* FeatureOneTests.swift in Sources */,
-				EBB0F56427C47B580008DF92 /* FeatuerFlagDummy.swift in Sources */,
-				EBB0F56627C47B600008DF92 /* ServiceOneDummy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

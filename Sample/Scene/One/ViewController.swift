@@ -1,10 +1,9 @@
 import UIKit
 
 final class ViewController: UIViewController {
+    private let viewModel: ViewModelFeatures
     
-    private let viewModel: ViewModelProtocol
-    
-    init(viewModel: ViewModelProtocol = ViewModel()) {
+    init(viewModel: ViewModelFeatures) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }

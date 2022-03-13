@@ -1,16 +1,9 @@
 import Foundation
 
-typealias ViewModelProtocol = FeatureOne & FeatureTwo
+typealias ViewModelFeatures = FeatureOne &
+                              FeatureTwo
 
-final class ViewModel: ViewModelProtocol {
-    typealias Dependencies = HasServiceOne &
-                             HasServiceTwo
-    
+struct ViewModel: ViewModelFeatures {
     let serviceOne: ServiceOneProtocol
     let serviceTwo: ServiceTwoProtocol
-        
-    init(dependencies: Dependencies = DependencyContainer.main) {
-        self.serviceOne = dependencies.serviceOne
-        self.serviceTwo = dependencies.serviceTwo
-    }
 }

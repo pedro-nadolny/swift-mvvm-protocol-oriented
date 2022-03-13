@@ -1,29 +1,13 @@
 import XCTest
 @testable import Sample
 
-final class Sut: FeatureOne {
-    let serviceOne: ServiceOneProtocol
-    let serviceTwo: ServiceTwoProtocol
-    
-    typealias Dependencies = HasServiceOne & HasServiceTwo
-    
-    init(dependencies: Dependencies) {
-        self.serviceOne = dependencies.serviceOne
-        self.serviceTwo = dependencies.serviceTwo
-    }
-}
-
 final class FeatureOneTestCase: XCTestCase {
-    
+    struct Sut: FeatureOne {
+        let serviceOne: ServiceOneProtocol
+    }
+
     private let serviceOneStub = ServiceOneStub()
-    private let serviceTwoStub = ServiceTwoStub()
-    
-    private lazy var sut = Sut(
-        dependencies: DependencyContainer.fixture(
-            serviceOne: serviceOneStub,
-            serviceTwo: serviceTwoStub
-        )
-    )
+    private lazy var sut = Sut(serviceOne: serviceOneStub)
 
     func testFeatureOne_whenCalledAndBothServicesReturnSuccess_shouldReturnSuccess() throws {
         //Given
@@ -63,46 +47,4 @@ final class FeatureOneTestCase: XCTestCase {
             return
         }
     }
-    
-    func testFeatureOne_whenServiceTwoReturnError_shouldReturnError() throws {
-        //Given
-        let expectation = expectation(description: "completion is called")
-        var result: Result<Void, Error>?
-        serviceTwoStub.response = .failure(NSError())
-        
-        //When
-        sut.featureOne { returnedResult in
-            expectation.fulfill()
-            result = returnedResult
-        }
-        
-        //Then
-        waitForExpectations(timeout: 0.1)
-        guard case .failure = result else {
-            XCTFail("failure not returned")
-            return
-        }
-    }
-    
-    func testFeatureOne_whenServiceOneAndServiceTwoReturnError_shouldReturnError() throws {
-        //Given
-        let expectation = expectation(description: "completion is called")
-        var result: Result<Void, Error>?
-        serviceOneStub.response = .failure(NSError())
-        serviceTwoStub.response = .failure(NSError())
-        
-        //When
-        sut.featureOne { returnedResult in
-            expectation.fulfill()
-            result = returnedResult
-        }
-        
-        //Then
-        waitForExpectations(timeout: 0.1)
-        guard case .failure = result else {
-            XCTFail("failure not returned")
-            return
-        }
-    }
 }
-
