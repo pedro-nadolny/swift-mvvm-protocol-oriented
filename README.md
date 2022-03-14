@@ -72,7 +72,7 @@ final class ViewModel: ViewModelFeatures {
 
 Check how we don't need to declare any business logic in our view-model directly! As stated before, this is because our view-model is a composition of features, and only need to declare how the dependecies for those features are managed, and nothing else. How you manage the dependecies, simple or fancy, is up to you. 
 
-Also I would even consider making the view-model a struct, as it will make it even easier to be declared, just be sure you know the behinds the scenes and the consequences of these decision. If you don't, look up the diferences between struct and classes, there is plenty of content in the internet. Following is an example of the ViewModel being implemented as a struct, as you see, it is shorter because we don't need to declare an initilizer, as structs have implicit ones based on its properties.
+Also I would even consider making the view-model a struct, as it will make it even easier to be declared, just be sure you know the behinds the scenes and the consequences of these decision. If you don't, look up the [diferences between struct and classes](https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html), there is plenty of content in the internet. Following is an example of the ViewModel being implemented as a struct, as you see, it is shorter because we don't need to declare an initilizer, as structs have memberwise initializers, based on its properties.
 
 ```swift
 typealias ViewModelFeatures = FeatureOne &
@@ -123,7 +123,9 @@ final class FeatureOneTestCase: XCTestCase {
 }
 ```
 
-For sake of completeness, here is the implementation of `ServiceOneStub`. If you are not familiar with stubs, take a look on what test doubles are. 
+Even though there is a litte bit more of boilerplate to the `XCTestCase`, having to declare the concrete implementation of what's being tested, it immediatly become clear, for whoever needs to read the test file, whats actually being tested in the test case.
+
+For sake of completeness, here is the implementation of `ServiceOneStub`. If you are not familiar with stubs, take a look on what [test double](https://martinfowler.com/bliki/TestDouble.html) are. 
 
 ```swift
 final class ServiceOneStub: ServiceOneProtocol {
